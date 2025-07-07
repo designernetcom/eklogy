@@ -127,14 +127,14 @@
 
 <body>
 <!-- Header START -->
-<header class="header-sticky header-absolute" data-bs-theme="dark">
+<header class="header-sticky header-absolute" data-bs-theme="dark" >
 	<!-- Logo Nav START -->
 	<nav class="navbar navbar-expand-xl px-lg-5">
-		<div class="container-fluid">
+		<div class="container">
 			<!-- Logo START -->
 			<a class="navbar-brand me-5" href="index.html">
-				<img class="light-mode-item navbar-brand-item" src="assets/images/logo/logo1.png" alt="logo">
-				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo/logo.png" alt="logo">
+				<img class="light-mode-item navbar-brand-item" src="assets/images/logo/logo1.png" alt="logo" style="height: 60px;">
+				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo/logo.png" alt="logo" style="height: 60px;">
 			</a>
 			<!-- Logo END 
 
@@ -143,7 +143,7 @@
 				<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
 
 						<!-- Nav item -->
-						<li class="nav-item dropdown" style="padding-left: 120px;">
+						<li class="nav-item dropdown" >
 							<a class="nav-link  active" href="home.html" data-bs-auto-close="outside"  aria-haspopup="true" aria-expanded="false">Home</a>
 							
 						</li>
@@ -362,7 +362,7 @@
 
 <!-- =======================
 Main Banner START -->
-<section class="pt-0">
+<section class="pt-0" >
     <!-- Slider START -->
     <div class="swiper overflow-hidden" data-swiper-options='{
         "effect": "fade",
@@ -378,47 +378,22 @@ Main Banner START -->
 
         <div class="swiper-wrapper">
             <!-- Slider item 1 (Image-based) -->
-            <!-- <div class="swiper-slide">
-                <div class="card overflow-hidden min-vh-100 rounded-0" style="background:url(assets/images/bg/10.jpg) no-repeat; background-size:cover; background-position:center;">
-                    
-                    <div class="bg-overlay bg-linear-overlay"></div>
-        
-                   
-                    <div class="position-relative z-index-2 d-flex flex-column m-auto h-100 py-9"> 
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-11 col-lg-8 col-xl-7 text-center m-auto">
-                                    <span class="bg-white bg-opacity-10 text-white small rounded-3 px-3 py-2">🚀 #World's best software agency</span>
-                                   
-                                    <h1 class="text-white display-4 my-4">Leading the Way in <span class="text-primary">software</span> innovation</h1>
-                                    <p class="text-white mb-5"> Whether you're a gaming enthusiast or simply seeking an extraordinary escape from reality, our Virtual VR product is your portal to endless excitement. </p>
-                                    <a class="btn btn-lg btn-white icon-link icon-link-hover mb-0" href="#">Get started now<i class="bi bi-arrow-right"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+
             
             <!-- Slider item 2 (Video-based) -->
-            <div class="swiper-slide">
-                <div class="card overflow-hidden min-vh-100 rounded-0">
-                    <!-- Video element -->
-                    <video autoplay muted loop playsinline class="w-100 h-100" style="object-fit: cover;">
-                        <source src="assets/images/1992-153555258.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <!-- Bg overlay -->
-                    <div class="bg-overlay bg-linear-overlay"></div>
-        
-                    <!-- Content -->
-              
-                </div>
-            </div>
+			<div class="swiper-slide">
+				<div class="card overflow-hidden  rounded-0">
+					<!-- Video element -->
+					<video autoplay muted loop playsinline class="w-100" style="height: 600px; object-fit: cover;">
+						<source src="assets/images/1992-153555258.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<!-- Content -->
+				</div>
+			</div>
         </div>	
 
-        <!-- Slider Pagination -->
-        <div class="swiper-pagination swiper-pagination-line position-absolute bottom-0 mb-3"></div>
+    
     </div>	
     <!-- Slider END -->
 </section>
@@ -580,7 +555,7 @@ About END -->
 					<div class="grid-menu mb-4" data-target=".filter-container">
 						<ul class="nav flex-md-column gap-1 nav-pills nav-pills-primary">
 							<li class="nav-item">
-								<a class="nav-link active" data-filter="*">All</a>
+								<a class="nav-link active" data-filter="">All</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" data-filter=".marketing">Technology Transformation Excellence</a>          
@@ -612,7 +587,7 @@ About END -->
 			<div class="col-md-8 col-lg-9">
 				<div class="row g-4 filter-container" data-isotope='{"layoutMode": "masonry"}'>
 					<!-- Work item -->
-					<div class="col-sm-6 col-lg-4 grid-item marketing " s>
+					<div class="col-sm-6 col-lg-4 grid-item marketing offset-lg-2">
 						<div class="card card-element-hover card-metro-hover">
 							<!-- Card Image -->              
 							<img src="assets/images/services/4by3/01.jpg" alt="portfolio-image">  
@@ -630,7 +605,7 @@ About END -->
 					
 
 					<!-- Work item -->
-					<div class="col-sm-6 col-lg-4 grid-item design">
+					<div class="col-sm-6 col-lg-4 offset-lg-2 grid-item design">
 						<div class="card card-element-hover card-metro-hover">
 							<!-- Card Image -->              
 							<img src="assets/images/services/4by3/02.jpg" alt="portfolio-image">  
@@ -647,7 +622,7 @@ About END -->
 					</div>
 
 					<!-- Work item -->
-					<div class="col-sm-6 col-lg-4 grid-item business ">
+					<div class="col-sm-6 col-lg-4 offset-lg-2 grid-item business ">
 						<div class="card card-element-hover card-metro-hover">
 							<!-- Card Image -->              
 							<img src="assets/images/blog/fractional ct.jpg" alt="portfolio-image" style="height: 230px;">  	
@@ -664,7 +639,7 @@ About END -->
 					</div>
 
 					<!-- Work item -->
-					<div class="col-sm-6 col-lg-4 grid-item brand">
+					<div class="col-sm-6 col-lg-4 offset-lg-2 grid-item brand">
 						<div class="card card-element-hover card-metro-hover">
 							<!-- Card Image -->              
 							<img src="assets/images/services/4by3/04.jpg" alt="portfolio-image">
@@ -681,7 +656,7 @@ About END -->
 					</div>
 
 					<!-- Work item -->
-					<div class="col-sm-6 col-lg-4 grid-item ui">
+					<div class="col-sm-6 col-lg-4 offset-lg-2 grid-item ui">
 						<div class="card card-element-hover card-metro-hover">
 							<!-- Card Image -->              
 							<img src="assets/images/blog/technology-transformation.jpg" alt="portfolio-image"> 
@@ -698,7 +673,7 @@ About END -->
 					</div>
 
 					<!-- Work item -->
-					<div class="col-sm-6 col-lg-4 grid-item fr">
+					<div class="col-sm-6 col-lg-4 offset-lg-2 grid-item fr">
 						<div class="card card-element-hover card-metro-hover">
 							<!-- Card Image -->              
 							<img src="assets/images/blog/capability-development-slide3.png" alt="portfolio-image" style="height: 230px;"> 
@@ -1193,8 +1168,7 @@ Footer START -->
 						<h6 class="mb-2 mb-md-4">Contact details</h6>
 						<ul class="list-group list-group-borderless">
 							<li class="d-flex mb-3"><i class="bi bi-geo-alt" style="font-size: 1.0rem; color: #00924a"></i>Office address: <br>Office No. 1002, 10th Floor, Finswell, Viman Nagar, Pune , Maharashtra , India - 411014. </li>
-							<li class="d-flex mb-3"><i class="bi bi-geo-alt" style="font-size: 1.0rem; color: #00924a"></i>Registered office :: <br>F-401, Zircon Venture Xenon Bldgs, Viman Nagar, PUNE, Pune City, Pune- 411014. </li>
-							
+					
 							<li class="d-flex mb-3"><i class="me-2  bi bi-envelope" style="font-size: 1.0rem; color: #00924a"></i> info@eklogi.com</li>
 					
 						</ul>

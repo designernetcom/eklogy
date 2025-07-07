@@ -85,166 +85,202 @@
 	
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<style>
+	.modern-search-btn {
+  animation: fadeIn 0.5s ease-in;
+}
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+.modern-search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  /* background: linear-gradient(135deg, #6e8efb, #a777e3); Gradient background */
+  color: #000;
+  border-radius: 5%; /* Circular shape */
+  border: none;
+  transition: all 0.3s ease;
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); Subtle shadow */
+  text-decoration: none;
+}
+
+.modern-search-btn i {
+  font-size: 1.2rem; /* Icon size */
+}
+
+/* .modern-search-btn:hover {
+  transform: scale(1.1); 
+  background: linear-gradient(135deg, #a777e3, #6e8efb); 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+} */
+
+.modern-search-btn:active {
+  transform: scale(0.95); /* Press effect */
+}
+</style>
 </head>
 
 <body>
-
 <!-- Header START -->
-<header class="header-sticky header-absolute">
-	<!-- Nav START -->
-	<nav class="navbar navbar-expand-xl">
+<header class="header-sticky header-absolute" data-bs-theme="dark" >
+	<!-- Logo Nav START -->
+	<nav class="navbar navbar-expand-xl px-lg-5">
 		<div class="container">
 			<!-- Logo START -->
-			<a class="navbar-brand me-0" href="home.html">
-				<img class="light-mode-item navbar-brand-item" src="assets/images/logo/logo1.png" alt="logo">
-				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo/logo1.png" alt="logo">
+			<a class="navbar-brand me-5" href="index.html">
+				<img class="light-mode-item navbar-brand-item" src="assets/images/logo/logo1.png" alt="logo" style="height: 60px;">
+				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo/logo.png" alt="logo" style="height: 60px;">
 			</a>
-			<!-- Logo END -->
+			<!-- Logo END 
 
-			<!-- Main navbar START -->
+			 Main navbar START -->
 			<div class="navbar-collapse collapse" id="navbarCollapse">
-				<ul class="navbar-nav navbar-nav-scroll dropdown-hover ">
+				<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
 
-					<!-- Nav item -->
-					<li class="nav-item dropdown">
-						<a class="nav-link  active" href="home.html" data-bs-auto-close="outside"  aria-haspopup="true" aria-expanded="false">Home</a>
-						
-					</li>
-
-					<!-- Nav item -->
-					<li class="nav-item dropdown">
-						<a class="nav-link " href="about-us.html" >About</a>
-					
-					</li>
-
-					<!-- Nav item -->
-					<li class="nav-item dropdown dropdown-fullwidth">
-						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
-						<div class="dropdown-menu py-0">
-							<div class="row p-2 p-sm-4">
-									   <!-- Dropdown column item -->
-							<!-- <div class="col-md-6 col-xl-3">
-								<ul class="list-unstyled">
-									<li class="dropdown-header h6 mb-2">Useful links</li>
-									<li> <a class="dropdown-item" href="#">Market research</a> </li>
-									<li> <a class="dropdown-item" href="#">Advertising</a> </li>
-									<li> <a class="dropdown-item" href="#">Consumer behavior</a> </li>
-									<li> <a class="dropdown-item" href="#">Digital marketing</a> </li>
-									<li> <a class="dropdown-item" href="#">Marketing ethics</a> </li>
-									<li> <a class="dropdown-item" href="#">Social media marketing</a> </li>
-								</ul>
-							</div> -->
+						<!-- Nav item -->
+						<li class="nav-item dropdown" >
+							<a class="nav-link  active" href="home.html" data-bs-auto-close="outside"  aria-haspopup="true" aria-expanded="false">Home</a>
 							
-
-								<!-- Dropdown column item -->
-								<div class="col-md-6 col-xl-4 col-xxl-5 h-100">
-									<span class="dropdown-header h6 mb-2">Our Service</span>
-
-									<!-- Dropdown item -->
-									<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
-										<div class="d-flex me-3">
-											<!-- Icon -->
-											<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi-file-earmark-text heading-color fs-6"></i></div>
-											<!-- Content -->
-											<div class="mx-2">
-												<p class="stretched-link heading-color fw-bold mb-0">Technology Transformation Excellence</p>
-											
+						</li>
+	
+						<!-- Nav item -->
+						<li class="nav-item dropdown">
+							<a class="nav-link " href="about-us.html" >About</a>
+						
+						</li>
+	
+						<!-- Nav item -->
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+							<div class="dropdown-menu py-0">
+								<div class="row p-2 p-sm-4">
+										   <!-- Dropdown column item -->
+								<!-- <div class="col-md-6 col-xl-3">
+									<ul class="list-unstyled">
+										<li class="dropdown-header h6 mb-2">Useful links</li>
+										<li> <a class="dropdown-item" href="#">Market research</a> </li>
+										<li> <a class="dropdown-item" href="#">Advertising</a> </li>
+										<li> <a class="dropdown-item" href="#">Consumer behavior</a> </li>
+										<li> <a class="dropdown-item" href="#">Digital marketing</a> </li>
+										<li> <a class="dropdown-item" href="#">Marketing ethics</a> </li>
+										<li> <a class="dropdown-item" href="#">Social media marketing</a> </li>
+									</ul>
+								</div> -->
+								
+	
+									<!-- Dropdown column item -->
+									<div class="col-md-6 col-xl-4 col-xxl-5 h-100">
+										<span class="dropdown-header h6 mb-2">Our Service</span>
+	
+										<!-- Dropdown item -->
+										<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
+											<div class="d-flex me-3">
+												<!-- Icon -->
+												<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi-file-earmark-text heading-color fs-6"></i></div>
+												<!-- Content -->
+												<div class="mx-2">
+													<a class="stretched-link heading-color fw-bold mb-0" href="technology-transformation.html">Technology Transformation Excellence</a>
+												
+												</div>
 											</div>
+										
 										</div>
-									
-									</div>
-
-									<!-- Dropdown item -->
-									<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
-										<div class="d-flex me-3">
-											<!-- Icon -->
-											<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-stickies heading-color fs-6"></i></div>
-											<!-- Content -->
-											<div class="mx-2">
-												<p class="stretched-link heading-color fw-bold mb-0">Unlocking the Power of Data</p>
-											
+	
+										<!-- Dropdown item -->
+										<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
+											<div class="d-flex me-3">
+												<!-- Icon -->
+												<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-stickies heading-color fs-6"></i></div>
+												<!-- Content -->
+												<div class="mx-2">
+													<a class="stretched-link heading-color fw-bold mb-0" href="unlocking-the-power-of-data.html">Unlocking the Power of Data</a>
+												
+												</div>
 											</div>
+										
 										</div>
-									
-									</div>
-
-									<!-- Dropdown item -->
-									<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
-										<div class="d-flex me-3">
-											<!-- Icon -->
-											<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-bullseye heading-color fs-6"></i></div>
-											<!-- Content -->
-											<div class="mx-2">
-												<p class="stretched-link heading-color fw-bold mb-0">Risk & Finance Technology</p>
-											
+	
+										<!-- Dropdown item -->
+										<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
+											<div class="d-flex me-3">
+												<!-- Icon -->
+												<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-bullseye heading-color fs-6"></i></div>
+												<!-- Content -->
+												<div class="mx-2">
+													<a class="stretched-link heading-color fw-bold mb-0" href="risk-and-finance-technology.html">Risk & Finance Technology</a>
+												
+												</div>
 											</div>
+										
 										</div>
-									
-									</div>
-
-									<!-- Dropdown item -->
-									<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
-										<div class="d-flex me-3">
-											<!-- Icon -->
-											<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-mask heading-color fs-6"></i></div>
-											<!-- Content -->
-											<div class="mx-2">
-												<a class="stretched-link heading-color fw-bold mb-0" href="#">Public Cloud Adoption Expertise</a>
-											
+	
+										<!-- Dropdown item -->
+										<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
+											<div class="d-flex me-3">
+												<!-- Icon -->
+												<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-mask heading-color fs-6"></i></div>
+												<!-- Content -->
+												<div class="mx-2">
+													<a class="stretched-link heading-color fw-bold mb-0" href="public-cloud-adoption-expertise.html">Public Cloud Adoption Expertise</a>
+												
+												</div>
 											</div>
+										
 										</div>
-									
-									</div>
-													<!-- Dropdown item -->
-													<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
-														<div class="d-flex me-3">
-															<!-- Icon -->
-															<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-mask heading-color fs-6"></i></div>
-															<!-- Content -->
-															<div class="mx-2">
-																<a class="stretched-link heading-color fw-bold mb-0" href="#">Public Cloud Adoption Expertise</a>
-															
+														<!-- Dropdown item -->
+														<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
+															<div class="d-flex me-3">
+																<!-- Icon -->
+																<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-mask heading-color fs-6"></i></div>
+																<!-- Content -->
+																<div class="mx-2">
+																	<a class="stretched-link heading-color fw-bold mb-0" href="public-cloud-adoption-expertise.html">Public Cloud Adoption Expertise</a>
+																
+																</div>
 															</div>
+														
 														</div>
-													
-													</div>
-								</div>
-
-								<!-- Feature resources card -->
-								<div class="col-lg-4">
-									<span class="dropdown-header h6 mb-2">Service</span>
-
-									<!-- Feature card -->
-									<div class="card bg-transparent px-3">
-										<!-- Image -->
-										<img src="assets/images/blog/fractional ct.jpg" class="rounded mb-3" alt="feature-img">
-										<div class="card-body p-0">
-										  
-											<p class="mb-2">Welcome to Eklogi, where we specialize in driving large-scale technology transformations for a digital-first approach. </p>
-										   
+									</div>
+	
+									<!-- Feature resources card -->
+									<div class="col-lg-4">
+										<span class="dropdown-header h6 mb-2">Service</span>
+	
+										<!-- Feature card -->
+										<div class="card bg-transparent px-3">
+											<!-- Image -->
+											<img src="assets/images/blog/fractional ct.jpg" class="rounded mb-3" alt="feature-img">
+											<div class="card-body p-0">
+											  
+												<p class="mb-2">Welcome to Eklogi, where we specialize in driving large-scale technology transformations for a digital-first approach. </p>
+											   
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</li>
-
-					<!-- Nav item -->
-					<li class="nav-item ">
-						<a class="nav-link " href="blog.html" >Blog</a>
-						
-					</li>
-
-					<!-- Nav item -->
-					<li class="nav-item"> <a class="nav-link" href="contact.html">Contact us</a> </li>
+						</li>
+	
+						<!-- Nav item -->
+						<li class="nav-item ">
+							<a class="nav-link " href="blog.html" >Blog</a>
+							
+						</li>
+	
+						<!-- Nav item -->
+						<li class="nav-item"> <a class="nav-link" href="contact.html">Contact us</a> </li>
 				</ul>
 			</div>
 			<!-- Main navbar END -->
 
 			<!-- Buttons -->
 			<ul class="nav align-items-center dropdown-hover ms-sm-2">
-		
+				<!-- Dark mode option START -->
 				<li class="nav-item dropdown dropdown-animation">
 					<button class="btn btn-link mb-0 px-2 lh-1" id="bd-theme"
 					type="button"
@@ -285,20 +321,27 @@
 						</li>
 					</ul>
 				</li>
-				<!-- Sign up button -->
-				<li class="nav-item me-2">
-					<a href="" class="btn btn-sm  mb-0"> <input type="text"  placeholder="Search here" width="100%" style="border-radius: 5px;padding: 5px;"/></a>
-				</li>
-				<!-- Buy now button -->
-				<!-- <li class="nav-item d-none d-sm-block">
-					<button class="btn btn-sm btn-primary mb-0">Buy now!</button>
-				</li> -->
-				<!-- Responsive navbar toggler -->
-						 <!-- Dark mode option START -->
-	
 				<!-- Dark mode option END -->
+
+				<!-- Search -->
+				<li class="nav nav-item dropdown nav-search px-1 px-lg-3">
+					<a class="btn btn-light border btn-round mb-0" role="button" href="#" id="navSearch" data-bs-toggle="dropdown" aria-expanded="true" data-bs-auto-close="outside" data-bs-display="static">
+						<i class="bi bi-search"> </i>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end shadow rounded p-2" aria-labelledby="navSearch" data-bs-popper="none">
+						<form class="input-group">
+							<input class="form-control border-primary" type="search" placeholder="Search..." aria-label="Search">
+							<button class="btn btn-primary m-0" type="submit">Search</button>
+						</form>
+					</div>
+				</li>
+
+				<!-- Offcanvas cart menu -->
+	
+
+				<!-- Responsive navbar toggler -->
 				<li class="nav-item">
-					<button class="navbar-toggler ms-sm-3 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler ms-3 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-animation">
 							<span></span>
 							<span></span>
@@ -310,7 +353,7 @@
 
 		</div>
 	</nav>
-	<!-- Nav END -->
+	<!-- Logo Nav END -->
 </header>
 <!-- Header END -->
 
@@ -319,15 +362,43 @@
 
 <!-- =======================
 Main Banner START -->
-<div class="container-fluid" style="padding-bottom: 50px; padding-top: 80px;">
-    <video autoplay muted loop playsinline>
-        <source src="assets/images/logo/1992-153555258.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-</div>
+<section class="pt-0" >
+    <!-- Slider START -->
+    <div class="swiper overflow-hidden" data-swiper-options='{
+        "effect": "fade",
+        "speed":"1000",
+        "autoplay":{
+            "delay": 3000, 
+            "disableOnInteraction": false
+        },
+        "pagination":{
+            "el":".swiper-pagination",
+            "clickable":"true"
+        }}'>
+
+        <div class="swiper-wrapper">
+            <!-- Slider item 1 (Image-based) -->
+
+            
+            <!-- Slider item 2 (Video-based) -->
+			<div class="swiper-slide">
+				<div class="card overflow-hidden  rounded-0">
+					<!-- Video element -->
+					<video autoplay muted loop playsinline class="w-100" style="height: 600px; object-fit: cover;">
+						<source src="assets/images/1992-153555258.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<!-- Content -->
+				</div>
+			</div>
+        </div>	
+
+    
+    </div>	
+    <!-- Slider END -->
+</section>
 <!-- =======================
 Main Banner END -->
-
 <!-- =======================
 About START -->
 <section class="pb-0"  >
@@ -443,7 +514,7 @@ About START -->
 								<li class="list-group-item heading-color d-flex pb-0"><i class="bi bi-patch-check-fill me-2"></i>Inspiring Transformation</li>
 							</ul>
 							<!-- Button -->
-							<a class="icon-link icon-link-hover" href="about-v1.html">Know about more<i class="bi bi-arrow-right"></i> </a>
+							<a class="icon-link icon-link-hover" href="">Know about more<i class="bi bi-arrow-right"></i> </a>
 						</div>
 					</div>
 				</div>
@@ -465,6 +536,165 @@ About START -->
 </section>
 <!-- =======================
 About END -->
+
+
+<section>
+	<div class="container">
+		<!-- Title -->
+		<div class="inner-container text-center mb-4 mb-sm-6">
+			<h2 class="mb-4">Our Services</h2>
+			<p class="mb-0">Our team of experts specializes in delivering tailored services designed to propel your organization forward in today's fast-paced digital landscape</p>
+		</div>
+
+		<div class="row g-4">
+			<!-- Tabs -->
+			<div class="col-md-4 col-lg-3">
+				<div class="d-flex flex-column h-100">
+					<h6 class="mb-sm-3">Our Services</h6>
+					<!-- Tab item START -->
+					<div class="grid-menu mb-4" data-target=".filter-container">
+						<ul class="nav flex-md-column gap-1 nav-pills nav-pills-primary">
+							<li class="nav-item">
+								<a class="nav-link active" data-filter="">All</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-filter=".marketing">Technology Transformation Excellence</a>          
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-filter=".design">Unlocking the Power of Data</a>        
+							</li>
+							<li class="nav-item">
+									<a class="nav-link" data-filter=".business">Risk & Finance Technology</a>        
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-filter=".brand">Public Cloud Adoption Expertise</a>        
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-filter=".ui">Technology Capability Development</a>        
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-filter=".fr">Fractional Technology Leadership</a>        
+							</li>
+						</ul>
+
+						<!--Tab item END  -->
+					</div>
+				
+				</div>
+			</div>
+
+			<!-- Tab content START -->
+			<div class="col-md-8 col-lg-9">
+				<div class="row g-4 filter-container" data-isotope='{"layoutMode": "masonry"}'>
+					<!-- Work item -->
+					<div class="col-sm-6 col-lg-4 grid-item marketing offset-lg-2">
+						<div class="card card-element-hover card-metro-hover">
+							<!-- Card Image -->              
+							<img src="assets/images/services/4by3/01.jpg" alt="portfolio-image">  
+
+							<!-- Card elements -->
+							<div class="card-img-overlay hover-element d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h6 class="mb-0"><a href="#" class="text-white stretched-link">Technology Transformation Excellence</a></h6>
+									<small class="text-white"></small>
+								</div>
+							</div>						
+						</div>
+					</div>
+					
+
+					<!-- Work item -->
+					<div class="col-sm-6 col-lg-4 offset-lg-2 grid-item design">
+						<div class="card card-element-hover card-metro-hover">
+							<!-- Card Image -->              
+							<img src="assets/images/services/4by3/02.jpg" alt="portfolio-image">  
+								
+							<!-- Card elements -->
+							<div class="card-img-overlay hover-element d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h6 class="mb-0"><a href="#" class="text-white stretched-link">Unlocking the Power of Data</a></h6>
+									<small class="text-white"></small>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Work item -->
+					<div class="col-sm-6 col-lg-4 offset-lg-2 grid-item business ">
+						<div class="card card-element-hover card-metro-hover">
+							<!-- Card Image -->              
+							<img src="assets/images/blog/fractional ct.jpg" alt="portfolio-image" style="height: 230px;">  	
+							
+							<!-- Card elements -->
+							<div class="card-img-overlay hover-element d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h6 class="mb-0"><a href="#" class="text-white stretched-link">Risk & Finance Technology</a></h6>
+									<small class="text-white"></small>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Work item -->
+					<div class="col-sm-6 col-lg-4 offset-lg-2 grid-item brand">
+						<div class="card card-element-hover card-metro-hover">
+							<!-- Card Image -->              
+							<img src="assets/images/services/4by3/04.jpg" alt="portfolio-image">
+							
+							<!-- Card elements -->
+							<div class="card-img-overlay hover-element d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h6 class="mb-0"><a href="#" class="text-white stretched-link">Public Cloud Adoption Expertise</a></h6>
+									<small class="text-white"></small>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Work item -->
+					<div class="col-sm-6 col-lg-4 offset-lg-2 grid-item ui">
+						<div class="card card-element-hover card-metro-hover">
+							<!-- Card Image -->              
+							<img src="assets/images/blog/technology-transformation.jpg" alt="portfolio-image"> 
+							
+							<!-- Card elements -->
+							<div class="card-img-overlay hover-element d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h6 class="mb-0"><a href="#" class="text-white stretched-link">Technology Capability Development</a></h6>
+									<small class="text-white"></small>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Work item -->
+					<div class="col-sm-6 col-lg-4 offset-lg-2 grid-item fr">
+						<div class="card card-element-hover card-metro-hover">
+							<!-- Card Image -->              
+							<img src="assets/images/blog/capability-development-slide3.png" alt="portfolio-image" style="height: 230px;"> 
+							
+							<!-- Card elements -->
+							<div class="card-img-overlay hover-element d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h6 class="mb-0"><a href="#" class="text-white stretched-link">Technology Risk & Compliance</a></h6>
+									<small class="text-white"></small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Tab content END -->
+		</div> <!-- Row END -->
+	</div>	
+</section>
+
 <section >
 	<div class="container">
 		<div class="row g-4 g-sm-6">
@@ -478,11 +708,7 @@ About END -->
 				<div class="col-md-7 col-lg-5 ms-auto">
 					<p>Our mission is to drive business growth and transformation by delivering innovative, data-driven technology solutions. We aim to align technology strategies with organizational goals, enhance customer experiences, and enable sustainable success. </p>
 	
-					<!-- Slider arrow -->
-					<div class="d-flex gap-3 position-relative mt-3">
-						<a href="#" class="btn btn-white border btn-icon rounded-circle mb-0 swiper-button-prev-team"><i class="bi bi-arrow-left"></i></a>
-						<a href="#" class="btn btn-white border btn-icon rounded-circle mb-0 swiper-button-next-team"><i class="bi bi-arrow-right"></i></a>
-					</div>
+			
 				</div>
 			</div>
 			<!-- Team item -->
@@ -493,7 +719,7 @@ About END -->
 					<div class="position-absolute top-0 end-0 z-index-2 m-3">
 						<ul class="list-inline mb-0 mb-2 mb-sm-0">
 					
-							<li class="list-inline-item"> <a class="btn-icon btn-sm rounded mb-2 bg-linkedin" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
+							<li class="list-inline-item"> <a class="btn-icon btn-sm rounded mb-2 bg-linkedin" href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHjKKgKbOCV-AAAAZelWDmAB84__uFZRrywi6-CW94P2hHJsDA0XiCq9YM4ITp8Ei0iNXvESSJsSg56gn718c3HVaf9hmMZcx6A2gM3Gav2K2BIdIH6hW88Apjo0MTS_WEdwA0=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fneelabh-ranjan%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
 						</ul>
 					</div>
 					<div class="card-img-scale-wrapper rounded-3">
@@ -560,7 +786,7 @@ About END -->
 					<div class="position-absolute top-0 end-0 z-index-2 m-3">
 						<ul class="list-inline mb-0 mb-2 mb-sm-0">
 					
-							<li class="list-inline-item"> <a class="btn-icon btn-sm rounded mb-2 bg-linkedin" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
+							<li class="list-inline-item"> <a class="btn-icon btn-sm rounded mb-2 bg-linkedin" href="https://www.linkedin.com/in/abhijitjoshi0523/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
 						</ul>
 					</div>
 					<div class="card-img-scale-wrapper rounded-3">
@@ -630,186 +856,7 @@ About END -->
 	</div>
 </section>
 
-<section class="bg-light overflow-hidden">
-	<div class="container">
-		<!-- Title and content -->
-		<div class="row mb-4 mb-md-6">
-			<div class="col-md-6 col-lg-5">
-				<h2 class="mb-0">Our Services</h2>
-			</div>
 
-			<div class="col-md-6 col-lg-4 ms-auto">
-				<p>Our team of experts specializes in delivering tailored services designed to propel your organization forward in today's fast-paced digital landscape. </p>
-
-				<!-- Slider arrow -->
-				<div class="d-flex gap-3 position-relative mt-3">
-					<a href="#" class="btn btn-white border btn-icon rounded-circle mb-0 swiper-button-prev-team"><i class="bi bi-arrow-left"></i></a>
-					<a href="#" class="btn btn-white border btn-icon rounded-circle mb-0 swiper-button-next-team"><i class="bi bi-arrow-right"></i></a>
-				</div>
-			</div>
-		</div>
-
-		<!-- Service start -->
-		<div class="swiper swiper-outside-end-n20" data-swiper-options='{
-			"spaceBetween": 50,
-			"loop": false,
-			"navigation":{
-				"nextEl":".swiper-button-next-team",
-				"prevEl":".swiper-button-prev-team"
-			},
-			"breakpoints": { 
-				"576": {"slidesPerView": 1},
-				"768": {"slidesPerView": 3},
-				"992": {"slidesPerView": 3},
-				"1200": {"slidesPerView": 4}
-			}}'>
-			
-			<div class="swiper-wrapper">
-
-				<!-- Service item -->
-				<div class="swiper-slide">
-					<div class="card card-img-scale bg-body overflow-hidden">
-						<!-- Image -->
-						<div class="card-img-scale-wrapper">
-							<img src="assets/images/services/4by3/01.jpg" class="card-img-top img-scale" alt="service image">
-						</div>
-						<!-- Card body -->
-						<div class="card-body p-4">
-							<h6><a href="service-single.html">Technology Transformation Excellence</a></h6>
-							<p class="mb-0">We specialize in driving large-scale
-                                technology transformations for a digital-first approach. </p>
-						</div>
-						<!-- Card footer -->
-						<div class="card-footer border-top bg-body p-4">
-							<a class="icon-link icon-link-hover stretched-link p-0 m-0" href="#">Explore this service<i class="bi bi-arrow-right"></i> </a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Service item -->
-				<div class="swiper-slide">
-					<div class="card card-img-scale bg-body overflow-hidden">
-						<!-- Image -->
-						<div class="card-img-scale-wrapper">
-							<img src="assets/images/services/4by3/02.jpg" class="card-img-top img-scale" alt="service image">
-						</div>
-						<!-- Card body -->
-						<div class="card-body p-4">
-							<h6><a href="service-single.html">Unlocking the power of Data</a></h6>
-							<p class="mb-0">Empower your organization with Eklogi's
-                                Data Management services.</p>
-						</div>
-						<!-- Card footer -->
-						<div class="card-footer border-top bg-body p-4">
-							<a class="icon-link icon-link-hover stretched-link p-0 m-0" href="#">Explore this service<i class="bi bi-arrow-right"></i> </a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Service item -->
-				<div class="swiper-slide">
-					<div class="card card-img-scale bg-body overflow-hidden">
-						<!-- Image -->
-						<div class="card-img-scale-wrapper">
-							<img src="assets/images/blog/Infographics-1.jpg" class="card-img-top img-scale" alt="service image">
-						</div>
-						<!-- Card body -->
-						<div class="card-body p-4">
-							<h6><a href="service-single.html">Risk & Finance Technology</a></h6>
-							<p class="mb-0">Streamline credit risk and finance models
-                                with unified data .....</p>
-						</div>
-						<!-- Card footer -->
-						<div class="card-footer border-top bg-body p-4">
-							<a class="icon-link icon-link-hover stretched-link p-0 m-0" href="#">Explore this service<i class="bi bi-arrow-right"></i> </a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Service item -->
-				<div class="swiper-slide">
-					<div class="card card-img-scale bg-body overflow-hidden">
-						<!-- Image -->
-						<div class="card-img-scale-wrapper">
-							<img src="assets/images/services/4by3/04.jpg" class="card-img-top img-scale" alt="service image">
-						</div>
-						<!-- Card body -->
-						<div class="card-body p-4">
-							<h6><a href="service-single.html">Public Cloud Adoption Expertise</a></h6>
-							<p class="mb-0">Protect your business from cyber threats with our cybersecurity solutions.</p>
-						</div>
-						<!-- Card footer -->
-						<div class="card-footer border-top bg-body p-4">
-							<a class="icon-link icon-link-hover stretched-link p-0 m-0" href="#">Explore this service<i class="bi bi-arrow-right"></i> </a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Service item -->
-				<div class="swiper-slide">
-					<div class="card card-img-scale bg-body overflow-hidden">
-						<!-- Image -->
-						<div class="card-img-scale-wrapper">
-							<img src="assets/images/blog/capability-development-slide3.png" class="card-img-top img-scale" alt="service image" style="height: 270px;">
-						</div>
-						<!-- Card body -->
-						<div class="card-body ">
-							<h6><a href="">Technology Capability Development</a></h6>
-							<p class="mb-0">Our Strategic Capability Development
-								services guide organizations in evaluating,</p>
-						</div>
-						<!-- Card footer -->
-						<div class="card-footer border-top bg-body p-4">
-							<a class="icon-link icon-link-hover stretched-link p-0 m-0" href="#">Explore this service<i class="bi bi-arrow-right"></i> </a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Service item -->
-				<div class="swiper-slide">
-					<div class="card card-img-scale bg-body overflow-hidden">
-						<!-- Image -->
-						<div class="card-img-scale-wrapper">
-							<img src="assets/images/services/4by3/06.jpg" class="card-img-top img-scale" alt="service image">
-						</div>
-						<!-- Card body -->
-						<div class="card-body p-4">
-							<h6><a href="service-single.html">Technology Risk & Compliance</a></h6>
-							<p class="mb-0">Our Strategic Capability Development
-                                services guide organizations in evaluating,</p>
-						</div>
-						<!-- Card footer -->
-						<div class="card-footer border-top bg-body p-4">
-							<a class="icon-link icon-link-hover stretched-link p-0 m-0" href="#">Explore this service<i class="bi bi-arrow-right"></i> </a>
-						</div>
-					</div>
-				</div>
-					<!-- Service item -->
-					<div class="swiper-slide">
-						<div class="card card-img-scale bg-body overflow-hidden">
-							<!-- Image -->
-							<div class="card-img-scale-wrapper">
-								<img src="assets/images/blog/fractional ct.jpg" class="card-img-top img-scale" alt="service image">
-							</div>
-							<!-- Card body -->
-							<div class="card-body p-4">
-								<h6><a href="service-single.html">Fractional Technology Leadership</a></h6>
-								<p class="mb-0">Our Strategic Capability Development
-									services guide organizations in evaluating,</p>
-							</div>
-							<!-- Card footer -->
-							<div class="card-footer border-top bg-body p-4">
-								<a class="icon-link icon-link-hover stretched-link p-0 m-0" href="#">Explore this service<i class="bi bi-arrow-right"></i> </a>
-							</div>
-						</div>
-					</div>
-			</div>
-		</div>
-		<!-- Service END -->
-
-
-	</div>
-</section>
 <!-- =======================
 Services END -->
 
@@ -944,7 +991,7 @@ Blog START -->
 				"breakpoints": {
 					"576": {"slidesPerView": 1}, 
 					"768": {"slidesPerView": 2}, 
-					"992": {"slidesPerView": 3}
+					"992": {"slidesPerView": 4}
 				},
 				"navigation":{
 					"nextEl":".swiper-button-next",
@@ -1121,8 +1168,7 @@ Footer START -->
 						<h6 class="mb-2 mb-md-4">Contact details</h6>
 						<ul class="list-group list-group-borderless">
 							<li class="d-flex mb-3"><i class="bi bi-geo-alt" style="font-size: 1.0rem; color: #00924a"></i>Office address: <br>Office No. 1002, 10th Floor, Finswell, Viman Nagar, Pune , Maharashtra , India - 411014. </li>
-							<li class="d-flex mb-3"><i class="bi bi-geo-alt" style="font-size: 1.0rem; color: #00924a"></i>Registered office :: <br>F-401, Zircon Venture Xenon Bldgs, Viman Nagar, PUNE, Pune City, Pune- 411014. </li>
-							
+					
 							<li class="d-flex mb-3"><i class="me-2  bi bi-envelope" style="font-size: 1.0rem; color: #00924a"></i> info@eklogi.com</li>
 					
 						</ul>
